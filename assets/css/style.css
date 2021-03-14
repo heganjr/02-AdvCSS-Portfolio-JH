@@ -1,0 +1,84 @@
+:root {
+    --navy-blue: #03045eff;
+    --dark-cornflower-blue: #023e8aff;
+    --star-command-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --cerulean-crayola: #00b4d8ff;
+    --sky-blue-crayola: #48cae4ff;
+    --sky-blue-crayola-2: #90e0efff;
+    --blizzard-blue: #ade8f4ff;
+    --powder-blue: #caf0f8ff;
+    scroll-behavior: smooth;
+    }
+/* https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 colour palette*/
+
+* {
+    color: var(--navy-blue);
+    font-family: sans-serif ;
+    list-style: none;
+}
+
+header{
+    background-color: var(--navy-blue) ;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--powder-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--sky-blue-crayola);
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+nav ul {
+    position:relative;
+    top: 30px;
+    right: 200px;
+}
+
+nav ul li {
+    padding: 16px
+}
+
+header nav ul li {
+    display: inline-flex;
+    text-align: right;
+    align-items: center;
+    
+}
+
+nav ul li a {
+    color: var(--powder-blue);
+    text-decoration: none;
+}
+
+.background-image {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    height: 250px;
+
+}
+
+.personal-image {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 25%;
+    bottom: 1rem
+}
+ /* Struggling to to select "Experience Includes" section and the list items as one */
+
+    
+    
+}
+

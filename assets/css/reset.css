@@ -1,0 +1,9 @@
+:root {
+    height:100%
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+/* Setting the default styles to apply to all browsers */
