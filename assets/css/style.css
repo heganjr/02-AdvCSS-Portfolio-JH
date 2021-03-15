@@ -10,7 +10,8 @@
     --powder-blue: #caf0f8ff;
     --border-radius: 10px;
     scroll-behavior: smooth;
-    }
+    
+}
 /* https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 colour palette*/
 
 * {
@@ -18,9 +19,14 @@
     font-family: Arial, Helvetica, sans-serif ;
     list-style: none;
     box-sizing: border-box;
+    margin: 0
 }
 
 header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* Remove above 3 lines if not keen on sticky */
     box-sizing: content-box;
     max-height: 120px  ;
     width:100%;
@@ -30,17 +36,18 @@ header{
     justify-content: space-between;
     align-content: center;
     margin;: 0px; 
-    
+    /* Might remove this so I dont need to add margin values for each element */
 }
 
 header h1 {
     font-size: 3rem;
     color: var(--dark-cornflower-blue);
     justify-content: space-between;
-    align-items: center;
     background-color: var(--sky-blue-crayola);
+    margin: 16px 0 16px;
     padding-left: 8px;
     padding-right: 8px;
+    padding-top: 16px;
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     
@@ -77,8 +84,20 @@ nav ul li a {
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 300px;
 
+}
+
+#text {
+    position: absolute;
+    color: var(--navy-blue);
+    font-style: italic;
+    font-weight: bolder;
+    right: 165px
+}
+
+#text p {
+    text-decoration: underline;
 }
 
 .personal-image {
@@ -92,7 +111,21 @@ nav ul li a {
 }
  /* Struggling to to select "Experience Includes" section and the list items as one */
 
-    
-    
+ footer {
+     background-color: var(--blizzard-blue);
+     text-align: center;
+     border-style: groove none groove none;
+     border-width: thin;
+     border-color: var(--navy-blue);
+     
+    }
+
+footer div {
+    font-size: 0.8rem;
+    font-style: oblique;    
 }
+
+    
+    
+
 
