@@ -8,44 +8,55 @@
     --sky-blue-crayola-2: #90e0efff;
     --blizzard-blue: #ade8f4ff;
     --powder-blue: #caf0f8ff;
+    --border-radius: 10px;
     scroll-behavior: smooth;
     }
 /* https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 colour palette*/
 
 * {
     color: var(--navy-blue);
-    font-family: sans-serif ;
+    font-family: Arial, Helvetica, sans-serif ;
     list-style: none;
+    box-sizing: border-box;
 }
 
 header{
-    background-color: var(--navy-blue) ;
-    display:flex;
+    box-sizing: content-box;
+    max-height: 120px  ;
+    width:100%;
+    background-color: var(--star-command-blue) ;
+    display: inline-flex;
+    flex-flow:row wrap;
     justify-content: space-between;
     align-content: center;
+    margin;: 0px; 
     
 }
 
 header h1 {
     font-size: 3rem;
-    color: var(--powder-blue);
-    display: flex;
+    color: var(--dark-cornflower-blue);
     justify-content: space-between;
     align-items: center;
     background-color: var(--sky-blue-crayola);
     padding-left: 8px;
     padding-right: 8px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
     
 }
 
 nav ul {
-    position:relative;
-    top: 30px;
-    right: 200px;
+    padding: 1rem;
+    
 }
 
 nav ul li {
-    padding: 16px
+    box-sizing: content-box;
+    min-height: 2rem;
+    padding: 1rem ;
+    background-color: var(--navy-blue);
+    border-radius: var(--border-radius) ;
 }
 
 header nav ul li {
@@ -61,6 +72,7 @@ nav ul li a {
 }
 
 .background-image {
+    position: relative;
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-position:bottom;
@@ -72,9 +84,11 @@ nav ul li a {
 .personal-image {
     height: 150px;
     width: 150px;
-    position: relative;
-    left: 25%;
-    bottom: 1rem
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: var(--border-radius);
+
 }
  /* Struggling to to select "Experience Includes" section and the list items as one */
 
