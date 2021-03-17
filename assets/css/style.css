@@ -25,7 +25,7 @@ html {
     box-sizing: c ;
     /* margin: 0; */
     /* Add this in or out - Looks a bit nicer with Margins */
-    border-color: var(--cerulean-crayola);
+    border-color: var(--star-command-blue);
     padding: 0
 }
 
@@ -78,7 +78,7 @@ nav ul {
     
 }
 
-nav ul li {
+#nav-link {
     box-sizing: content-box;
     min-height: 2rem;
     padding: 1rem ;
@@ -86,9 +86,19 @@ nav ul li {
     border-radius: var(--border-radius) ;
 }
 
-nav ul li a {
+#nav-link a {
     color: var(--powder-blue);
     text-decoration: none;
+}
+
+#nav-link:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+#nav-link:hover a {
+    color: black
+    
 }
 
 .background-image {
@@ -119,14 +129,14 @@ nav ul li a {
     top: 0px;
     right: 0px;
     border-bottom-left-radius: var(--border-radius);
-    border-style: solid;
+    border-style: none solid solid solid;
     box-sizing: content-box;
     padding: 0.5rem ;    
 }
 
 .heading {
-    min-width: 20vw;
-    max-width: 20vw;
+    min-width: 14vw;
+    max-width: 14vw;
     display: inline-flex;
     justify-content: flex-end;    
     text-align: right;
@@ -134,56 +144,26 @@ nav ul li a {
     border-width: 4px;
     border-color: var(--star-command-blue);
     padding: 8px;
+    margin: 16px
 }
 
-main section {
+.about-me p {
+    padding-left: 2rem
+}
+
+section {
     display:flex
 }
 
-
-/* main section h1 {
-    width: 30vh;
-    border-right: solid; */
-    
+main p {
+    padding-left: 
 }
 
-.about-me h1 {
-   ;
-}
-
-
-/* .about-me {
-    
-    width: 100vw;
-    flex-direction: row;
-     */
-}
-
-
-/* .about-me h1 {
-    width: 100%;
-    box-sizing: content-box;
-    justify-content: right;
-    
-} */
-
-/* .work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-     */
-}
-
-main img {
-    /* display: flex;
-    flex-wrap: wrap; */
-    width: 50px;
-    height:
-}
-.contact-me {
-    background-color: yellowgreen;
-    display: block;
-    justify-items: center
+#contact-me-heading {
+    background-color:var(--blue-green);
+    display: block ;
+    text-align: center;
+    margin: 0;
 }
     
  footer ul li{
@@ -192,16 +172,30 @@ main img {
      align-content: center;
  }
 
+ .contact-img {
+     width: 60px;
+     
+ }
+
+ .contact-img:hover {
+     filter: invert(1);
+ }
+
  footer {
      background-color: var(--blizzard-blue);
      text-align: center;
      border-style: groove none groove none;
-     border-width: thin;
+     border-width: thick;
      border-color: var(--navy-blue);
      
     }
 
+footer p {
+    color:black
+}
+
 footer div {
+    color: black;
     font-size: 0.8rem;
     font-style: oblique;    
 }
