@@ -11,21 +11,33 @@
     --border-radius: 10px;
     scroll-behavior: smooth;
     
+    
 }
 /* https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 colour palette*/
+html {
+    
+}
 
 * {
     color: var(--navy-blue);
     font-family: Arial, Helvetica, sans-serif ;
     list-style: none;
-    box-sizing: border-box;
-    margin: 0
+    box-sizing: c ;
+    /* margin: 0; */
+    /* Add this in or out - Looks a bit nicer with Margins */
+    border-color: var(--cerulean-crayola);
+    padding: 0
+}
+
+body {
+    margin: 0;
 }
 
 header{
-    position: -webkit-sticky;
+    margin: 0;
     position: sticky;
     top: 0;
+    z-index: 99;
     /* Remove above 3 lines if not keen on sticky */
     box-sizing: content-box;
     max-height: 120px  ;
@@ -37,6 +49,7 @@ header{
     align-content: center;
     margin;: 0px; 
     /* Might remove this so I dont need to add margin values for each element */
+    /* add a gradient colour */
 }
 
 header h1 {
@@ -53,6 +66,13 @@ header h1 {
     
 }
 
+header nav ul li {
+    display: inline-flex;
+    text-align: right;
+    align-items: center;
+
+}
+
 nav ul {
     padding: 1rem;
     
@@ -64,13 +84,6 @@ nav ul li {
     padding: 1rem ;
     background-color: var(--navy-blue);
     border-radius: var(--border-radius) ;
-}
-
-header nav ul li {
-    display: inline-flex;
-    text-align: right;
-    align-items: center;
-    
 }
 
 nav ul li a {
@@ -85,18 +98,17 @@ nav ul li a {
     background-position:bottom;
     background-repeat: no-repeat;
     height: 300px;
-
 }
 
-#text {
+#text-experience {
     position: absolute;
     color: var(--navy-blue);
     font-style: italic;
     font-weight: bolder;
-    right: 165px
+    right: 180px
 }
 
-#text p {
+#text-experience p {
     text-decoration: underline;
 }
 
@@ -107,9 +119,78 @@ nav ul li a {
     top: 0px;
     right: 0px;
     border-bottom-left-radius: var(--border-radius);
-
+    border-style: solid;
+    box-sizing: content-box;
+    padding: 0.5rem ;    
 }
- /* Struggling to to select "Experience Includes" section and the list items as one */
+
+.heading {
+    min-width: 20vw;
+    max-width: 20vw;
+    display: inline-flex;
+    justify-content: flex-end;    
+    text-align: right;
+    border-right: solid;
+    border-width: 4px;
+    border-color: var(--star-command-blue);
+    padding: 8px;
+}
+
+main section {
+    display:flex
+}
+
+
+/* main section h1 {
+    width: 30vh;
+    border-right: solid; */
+    
+}
+
+.about-me h1 {
+   ;
+}
+
+
+/* .about-me {
+    
+    width: 100vw;
+    flex-direction: row;
+     */
+}
+
+
+/* .about-me h1 {
+    width: 100%;
+    box-sizing: content-box;
+    justify-content: right;
+    
+} */
+
+/* .work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+     */
+}
+
+main img {
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 50px;
+    height:
+}
+.contact-me {
+    background-color: yellowgreen;
+    display: block;
+    justify-items: center
+}
+    
+ footer ul li{
+     display: inline-block;
+     width: 30vw;
+     align-content: center;
+ }
 
  footer {
      background-color: var(--blizzard-blue);
