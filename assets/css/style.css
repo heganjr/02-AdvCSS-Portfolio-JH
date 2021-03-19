@@ -272,3 +272,17 @@ footer div {
     height: 100px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  #nav-link {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header-banner nav ul {
+    display: flex;
+    float: right;
+    margin-right: 32px;
+  }
+}
