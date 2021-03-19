@@ -23,5 +23,5 @@ ____
 
 
 ## Screenshot
-![Work-Screenshot](.\assets\images\portfolio-img.png)
+![Work-Screenshot](./assets/images/portfolio-img.png)
 
