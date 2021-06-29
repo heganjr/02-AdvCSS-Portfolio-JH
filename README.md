@@ -2,9 +2,9 @@
 
 UWA Web Dev Bootcamp - Feb 2021
 
-[GitHub Repository](https://heganjr.github.io/Portfolio-JH/)
+[Deployed URL](https://heganjr.github.io/Portfolio-JH/)
 
-[Deployed URL](https://github.com/heganjr/Portfolio-JH)
+[GitHub Repository](https://github.com/heganjr/Portfolio-JH)
 
 ---
 
